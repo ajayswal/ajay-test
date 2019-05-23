@@ -3,6 +3,17 @@
 ### Follow this article in **[YouTube](https://www.youtube.com/watch?v=m21nFreFw8A)**
 ### Prerequisites
 1. EC2 instance with Java v1.8.x 
+1. Install the dependencies necessary to add a new repository:
+      # apt install software-properties-common
+2. Enable the Linux Uprising PPA by running the following commands:   
+      #  add-apt-repository ppa:linuxuprising/java
+3. Once the repository is added, update the packages list and install the oracle-java11-installer package by typing:  
+      #apt update
+      #apt install oracle-java11-installer
+---->You will be prompted to accept the Oracle license.
+Verify the installation by running the following command which will print the R version:
+
+      #java -version
 
 ### Install Apache Tomcat
 Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /opt on EC2 instance
